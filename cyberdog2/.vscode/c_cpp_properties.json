@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hxt/ros2_ws/install/learning_interface/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hxt/ros2_ws/src/beginner/include/**",
+        "/home/hxt/ros2_ws/src/beginner_c/include/**",
+        "/home/hxt/ros2_ws/src/urdf_tutorial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
