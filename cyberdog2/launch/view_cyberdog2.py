@@ -42,7 +42,7 @@ def generate_launch_description():
 
     declare_urdf_cmd = DeclareLaunchArgument(
         'urdf_file',
-        default_value=os.path.join(bringup_dir, 'urdf', 'go2_description.urdf'),
+        default_value=os.path.join(bringup_dir, 'urdf', 'cyberdog2.urdf'),
         description='Path to the URDF file')
 
     start_robot_state_publisher_cmd = Node(
