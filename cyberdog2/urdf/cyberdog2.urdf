@@ -230,7 +230,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.236 0.19 0.109"/>
+        <box size="0.4 0.25 0.109"/>
       </geometry>
     </collision>
     <inertial>
@@ -398,6 +398,18 @@
     <child link="FR_hip_shoulder"/>
   </joint>
   <link name="FR_hip_shoulder">
+      <visual>
+      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.035" radius="0.039"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
@@ -489,7 +501,7 @@
         <box size="0.016 0.016 0.18341"/>
       </geometry>
     </collision>
-    <collision name="FR_knee_rubber">
+    <!-- <collision name="FR_knee_rubber">
       <origin rpy="0 3.141592653589793 0" xyz="-0.01 0 -0.007"/>
       <geometry>
         <sphere radius="0.016"/>
@@ -502,7 +514,7 @@
           </ode>
         </contact>
       </surface>
-    </collision>
+    </collision> -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.0006 -4.72e-05 -0.0893"/>
       <mass value="0.116"/>
@@ -622,6 +634,18 @@
     <child link="FL_hip_shoulder"/>
   </joint>
   <link name="FL_hip_shoulder">
+    <visual>
+      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.035" radius="0.039"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
@@ -713,7 +737,7 @@
         <box size="0.016 0.016 0.18341"/>
       </geometry>
     </collision>
-    <collision name="FL_knee_rubber">
+    <!-- <collision name="FL_knee_rubber">
       <origin rpy="0 3.141592653589793 0" xyz="-0.01 0 -0.007"/>
       <geometry>
         <sphere radius="0.016"/>
@@ -726,7 +750,7 @@
           </ode>
         </contact>
       </surface>
-    </collision>
+    </collision> -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.0006 -4.72e-05 -0.0893"/>
       <mass value="0.116"/>
@@ -846,6 +870,18 @@
     <child link="RR_hip_shoulder"/>
   </joint>
   <link name="RR_hip_shoulder">
+      <visual>
+      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.035" radius="0.039"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
@@ -937,7 +973,7 @@
         <box size="0.016 0.016 0.18341"/>
       </geometry>
     </collision>
-    <collision name="RR_knee_rubber">
+    <!-- <collision name="RR_knee_rubber">
       <origin rpy="0 3.141592653589793 0" xyz="-0.01 0 -0.007"/>
       <geometry>
         <sphere radius="0.016"/>
@@ -950,7 +986,7 @@
           </ode>
         </contact>
       </surface>
-    </collision>
+    </collision> -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.0006 -4.72e-05 -0.0893"/>
       <mass value="0.116"/>
@@ -1070,6 +1106,18 @@
     <child link="RL_hip_shoulder"/>
   </joint>
   <link name="RL_hip_shoulder">
+      <visual>
+      <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.035" radius="0.039"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
@@ -1161,7 +1209,7 @@
         <box size="0.016 0.016 0.18341"/>
       </geometry>
     </collision>
-    <collision name="RL_knee_rubber">
+    <!-- <collision name="RL_knee_rubber">
       <origin rpy="0 3.141592653589793 0" xyz="-0.01 0 -0.007"/>
       <geometry>
         <sphere radius="0.016"/>
@@ -1174,7 +1222,7 @@
           </ode>
         </contact>
       </surface>
-    </collision>
+    </collision> -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.0006 -4.72e-05 -0.0893"/>
       <mass value="0.116"/>
@@ -1250,17 +1298,17 @@
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <link name="head">
-    <collision>
+    <!-- <collision>
       <origin rpy="0 0 0" xyz="0.256 0 0.120"/>
       <geometry>
         <box size="0.076 0.060 0.040"/>
       </geometry>
-    </collision>
-    <collision>
+    </collision> -->
+    <!-- <collision>
       <origin rpy="0 0 0" xyz="0.225 0 0.150"/>
       <geometry>
         <box size="0.020 0.080 0.100"/>
       </geometry>
-    </collision>
+    </collision> -->
   </link>
 </robot>

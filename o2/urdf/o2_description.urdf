@@ -21,7 +21,7 @@
         izz="0.027635" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -32,6 +32,17 @@
         name="">
         <color
           rgba="0.75294 0.75294 0.75294 1" />
+      </material> -->
+          <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+          <box size="0.4 0.2 0.2"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -39,8 +50,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/base_link.STL" />
+          <box size="0.4 0.2 0.2"/>
       </geometry>
     </collision>
   </link>
@@ -61,7 +71,7 @@
         izz="0.007" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -72,15 +82,25 @@
         name="">
         <color
           rgba="0.75294 0.75294 0.75294 1" />
+      </material> -->
+          <origin
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
+      <geometry>
+          <box size="0.03 0.03 0.2"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/L1.STL" />
+          <box size="0.03 0.03 0.2"/>
       </geometry>
     </collision>
   </link>
@@ -114,7 +134,7 @@
         izz="0.0015997" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -125,15 +145,25 @@
         name="">
         <color
           rgba="0.75294 0.75294 0.75294 1" />
+      </material> -->
+          <origin
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
+      <geometry>
+          <box size="0.03 0.03 0.2"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/L2.STL" />
+          <box size="0.03 0.03 0.2"/>
       </geometry>
     </collision>
   </link>
@@ -167,7 +197,7 @@
         izz="0.0069047" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -178,15 +208,21 @@
         name="">
         <color
           rgba="0.69804 0.69804 0.69804 1" />
+      </material> -->
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.0948" length="0.02"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/L3.STL" />
+        <cylinder radius="0.0948" length="0.02"/>
       </geometry>
     </collision>
   </link>
@@ -220,7 +256,7 @@
         izz="0.007" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -231,15 +267,25 @@
         name="">
         <color
           rgba="0.75294 0.75294 0.75294 1" />
+      </material> -->
+         <origin
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
+      <geometry>
+          <box size="0.03 0.03 0.2"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/R1.STL" />
+          <box size="0.03 0.03 0.2"/>
       </geometry>
     </collision>
   </link>
@@ -273,7 +319,7 @@
         izz="0.0015997" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -284,15 +330,25 @@
         name="">
         <color
           rgba="0.75294 0.75294 0.75294 1" />
+      </material> -->
+          <origin
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
+      <geometry>
+          <box size="0.03 0.03 0.2"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+        xyz="0.1 0 0"
+        rpy="0 1.5707963 0" />
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/R2.STL" />
+          <box size="0.03 0.03 0.2"/>
       </geometry>
     </collision>
   </link>
@@ -326,7 +382,7 @@
         izz="0.0069049" />
     </inertial>
     <visual>
-      <origin
+      <!-- <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
@@ -337,15 +393,21 @@
         name="">
         <color
           rgba="0.79216 0.81961 0.93333 1" />
+      </material> -->
+          <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.0948" length="0.02"/>
+      </geometry>
+                  <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh
-          filename="package://o2/meshes/visual/R3.STL" />
+        <cylinder radius="0.0948" length="0.02"/>
       </geometry>
     </collision>
   </link>
