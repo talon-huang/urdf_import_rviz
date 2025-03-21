@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="O2with_inertial">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="-0.027235 0.0022242 -0.041044"
+        rpy="0 0 0" />
+      <mass
+        value="11.125" />
+      <inertia
+        ixx="0.018846"
+        ixy="0.00014507"
+        ixz="-4.9796E-05"
+        iyy="0.026976"
+        iyz="1.0723E-05"
+        izz="0.027635" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="0.031112 0.0043417 -0.029096"
+        rpy="0 0 0" />
+      <mass
+        value="2.7821" />
+      <inertia
+        ixx="0.0028627"
+        ixy="-3.8759E-05"
+        ixz="-0.00013033"
+        iyy="0.0051034"
+        iyz="-2.013E-05"
+        izz="0.007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.15335 0"
+      rpy="-1.5708 1.5708 0" />
+    <parent
+      link="base" />
+    <child
+      link="L1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="0.10544 0.0072133 -0.0016596"
+        rpy="0 0 0" />
+      <mass
+        value="0.30016" />
+      <inertia
+        ixx="0.00011058"
+        ixy="2.7814E-05"
+        ixz="-0.00013979"
+        iyy="0.0015669"
+        iyz="3.2981E-06"
+        izz="0.0015997" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2_joint"
+    type="continuous">
+    <origin
+      xyz="0.2 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="2.1365E-06 -1.9006E-06 -0.00085595"
+        rpy="0 0 0" />
+      <mass
+        value="1.5094" />
+      <inertia
+        ixx="0.0035438"
+        ixy="-1.2461E-05"
+        ixz="2.2653E-07"
+        iyy="0.003508"
+        iyz="-5.1248E-08"
+        izz="0.0069047" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3_joint"
+    type="continuous">
+    <origin
+      xyz="0.2 0 0.0463"
+      rpy="0 0 0" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="R1">
+    <inertial>
+      <origin
+        xyz="0.031112 0.0043416 0.029096"
+        rpy="0 0 0" />
+      <mass
+        value="2.7821" />
+      <inertia
+        ixx="0.0028627"
+        ixy="-3.8751E-05"
+        ixz="0.00013032"
+        iyy="0.0051034"
+        iyz="2.0127E-05"
+        izz="0.007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R1_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.15335 0"
+      rpy="-1.5708 1.5708 0" />
+    <parent
+      link="base" />
+    <child
+      link="R1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="R2">
+    <inertial>
+      <origin
+        xyz="0.10544 0.0072133 0.0016596"
+        rpy="0 0 0" />
+      <mass
+        value="0.30016" />
+      <inertia
+        ixx="0.00011058"
+        ixy="2.7814E-05"
+        ixz="0.00013979"
+        iyy="0.0015669"
+        iyz="-3.2981E-06"
+        izz="0.0015997" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R2_joint"
+    type="continuous">
+    <origin
+      xyz="0.2 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="R1" />
+    <child
+      link="R2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="R3">
+    <inertial>
+      <origin
+        xyz="2.0163E-06 -1.946E-06 0.00085616"
+        rpy="0 0 0" />
+      <mass
+        value="1.5094" />
+      <inertia
+        ixx="0.0035439"
+        ixy="-1.24E-05"
+        ixz="-2.2753E-07"
+        iyy="0.003508"
+        iyz="4.9798E-08"
+        izz="0.0069049" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://o2/meshes/visual/R3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R3_joint"
+    type="continuous">
+    <origin
+      xyz="0.2 0 -0.0463"
+      rpy="0 0 0" />
+    <parent
+      link="R2" />
+    <child
+      link="R3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
